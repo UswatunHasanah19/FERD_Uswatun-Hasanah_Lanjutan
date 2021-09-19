@@ -1,0 +1,70 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    font-size: 14px;
+    font-family: verdana;
+
+}
+#menu {
+    background:white;
+    width: 100%;
+    height: 65px;
+    margin: 8px;
+    padding: 0px;
+    
+}
+#menu ul {
+    list-style: none;
+    float: right;
+    
+
+}
+#menu ul li {
+    float: left;
+    line-height: 65px
+}
+#menu ul li a {
+    float:left; 
+    width:100px; 
+    display:block; 
+    text-align:center; 
+    color:black; 
+    text-decoration:none; 
+}
+img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+#kolom{
+    background: white;
+}
+#form{
+    background: white;
+}
+#nama {
+    width: 1500px;
+}
+#role {
+    width: 1400px;
+}
+#availability {
+    width: 1500px;
+}
+#age {
+    width: 1500px;
+}
+#lokasi {
+    width: 1500px;
+}
+#yearexperience {
+    width: 1500px;
+}
+#email {
+    width: 1500px;
+}
+#submit {
+    width: 1400px;
+} 
