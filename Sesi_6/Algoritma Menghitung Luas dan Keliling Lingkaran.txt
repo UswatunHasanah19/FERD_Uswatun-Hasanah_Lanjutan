@@ -1,0 +1,47 @@
+Algoritma : 
+1. Masukan nilai jari-jari
+2. Menetapkan nilai phi =3.14
+3. Pilihan hitung Luas atau Lingkaran
+4. Jika ”ya”, maka dengan rumus Luas = phi * radius ^ 2
+5. Tampilkan Luas lingkaran
+6. Jika ”Tidak”, maka dengan rumus Keliling = 2 * phi * radius.
+7. Cetak hasil keliling lingkaran
+8. Program selesai
+
+- Menghitung Luas Lingkaran !!!
+
+Pseudocode :
+
+1. Phi <- 3.14
+
+2. Input (r)
+
+3. Luas <- Phi x r x r
+
+4. Output (Luas)
+
+Ket :
+
+* Rumus Luas Lingkaran = Phi x r x r
+
+* r = jari-jari
+
+
+- Menghitung Keliling Lingkaran !!!
+
+Pseudocode :
+
+1. Phi <- 3.14
+
+2. Input (r)
+
+3. Keliling <- 2Phi x r
+
+4. Output (Keliling)
+
+Ket :
+
+* Rumus Keliling Lingkaran = 2Phi x r
+
+* r = jari-jari
+
