@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment 1</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body bgcolor="#EBEBEB">
+<nav id="menu">
+     <ul>
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="product.html">PRODUCT</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>
+        <li><a href="blog.html">BLOG</li>
+        <li><a href="my inventory.html">MYINVENTORY</a></li>
+    </ul>
+</nav>
+<div id="kolom">
+<img src="uswa.jpg" alt="Ini adalah teks alternatif" width="349" height="619" align="left"/>
+<h1 id="myname">Uswatun Hasanah</h1>
+<p id="bagian">Front End Designer</p>
+<br>
+<button  style="background-color: blue;" onclick="tampilkan()">Edit</button>
+<button type="resume">Resume</button>
+<br>
+<table>
+<tr>
+    <td><b>Availability</b></td>
+    <td id="myavailability">Full Time</td>
+</tr>
+<tr>
+    <td><b>Usia</b></td>
+    <td id="usia">20</td>
+</tr>
+<tr>
+    <td><b>Lokasi</b></td>
+    <td id="mylokasi">Sumatera Selatan, Indonesia</td>
+</tr>
+<tr>
+    <td><b>Pengalaman</b></td>
+    <td id="pengalaman">2</td>
+</tr>
+<tr>
+    <td><b>Email</b></td>
+    <td id="myemail">uh74925@gmail.com</td>
+</tr>
+</table>
+</div>
+<style>
+#kolom {-moz-column-count:3; -webkit-column-count: 3; column-count: 3;}
+</style>
+<br>
+<br>
+</body>
+<div id="form">
+    <label for="nama">Nama</label><br>
+    <input type="text" id="nama" name="nama"><br>
+
+    <label for="role">Role</label><br>
+    <input type="role" id="role" name="role"><br>
+
+    <label for="availability">Availability</label><br>
+    <input type="availability" id="availability" name="availability"><br>
+
+    <label for="age">Age</label><br>
+    <input type="age" id="age" name="age"><br>
+    
+    <label for="lokasi">Lokasi</label><br>
+    <input type="lokasi" id="lokasi" name="lokasi"><br>
+
+    <label for="yearexperience">Year Experience</label><br>
+    <input type="yearexperience" id="yearexperience" name="yearexperience"><br>
+
+    <label for="email">Email</label><br>
+    <input type="email" id="email" name="email"><br>
+    <button style="background: green;" id="submit" onclick="simpanForm()">SUBMIT </button >
+
+</div>
+
+<script>
+    let person ={
+        nama:document.getElementById("myname").textContent,
+        bagian:document.getElementById("bagian").textContent,
+        availability:document.getElementById("myavailability").textContent,
+        usia:document.getElementById("usia").textContent,
+        lokasi:document.getElementById("mylokasi").textContent,
+        pengalaman:document.getElementById("pengalaman").textContent,
+        email:document.getElementById("myemail").textContent
+    }
+    function tampilkan(){
+        document.getElementById("nama").value=person.nama,
+        document.getElementById("role").value=person.bagian,
+        document.getElementById("availability").value=person.availability,
+        document.getElementById("age").value=person.usia,
+        document.getElementById("lokasi").value=person.lokasi,
+        document.getElementById("yearexperience").value=person.pengalaman,
+        document.getElementById("email").value=person.email
+    }
+    function simpanForm(){
+    let form={
+        nama:document.getElementById("nama").value,
+        role:document.getElementById("role").value,
+        availability:document.getElementById("availability").value,
+        age:document.getElementById("age").value,
+        lokasi:document.getElementById("lokasi").value,
+        yearexperience:document.getElementById("yearexperience").value,
+        email:document.getElementById("email").value
+    }
+    {
+    document.getElementById("myname").innerHTML=form.nama
+    document.getElementById("bagian").innerHTML=form.role
+    document.getElementById("myavailability").innerHTML=form.availability
+    document.getElementById("usia").innerHTML=form.age
+    document.getElementById("mylokasi").innerHTML=form.lokasi
+    document.getElementById("pengalaman").innerHTML=form.yearexperience
+    document.getElementById("myemail").innerHTML=form.email}
+
+    person ={
+        nama:document.getElementById("myname").textContent,
+        bagian:document.getElementById("bagian").textContent,
+        availability:document.getElementById("myavailability").textContent,
+        usia:document.getElementById("usia").textContent,
+        lokasi:document.getElementById("mylokasi").textContent,
+        pengalaman:document.getElementById("pengalaman").textContent,
+        email:document.getElementById("myemail").textContent
+    }
+}
+console.log(person)
+</script>
+</html>
